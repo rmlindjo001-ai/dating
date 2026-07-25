@@ -93,37 +93,21 @@ color:#2563eb;
 
 .hero{
 
-min-height:620px;
+max-width:1100px;
 
-background:
-
-linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
-url("../../images/relationship/article1-relationship.webp");
-
-background-size:cover;
-background-position:center;
-
-display:flex;
-align-items:center;
-
-color:white;
+margin:30px auto 0;
 
 }
 
-.hero-content{
-font-size:clamp(28px, 5vw, 52px);
+.hero img{
 
-    font-weight:700;
+width:100%;
 
-    line-height:1.2;
+height:auto;
 
-    text-align:center;
+border-radius:20px;
 
-    max-width:850px;
-
-    margin:20px auto;
-
-    word-wrap:break-word;
+display:block;
 
 }
 
@@ -161,6 +145,66 @@ font-size:clamp(13px, 3vw, 10px);
 
 }
 
+    .article-header{
+
+background:#fff;
+
+padding:60px 0 35px;
+
+text-align:center;
+
+}
+
+.article-header h1{
+
+font-size:clamp(34px,5vw,54px);
+
+line-height:1.25;
+
+font-weight:800;
+
+max-width:900px;
+
+margin:20px auto;
+
+color:#1f2937;
+
+}
+
+.article-header .category{
+
+display:inline-block;
+
+background:#2563eb;
+
+color:#fff;
+
+padding:8px 22px;
+
+border-radius:50px;
+
+font-size:14px;
+
+}
+
+.article-header .meta{
+
+margin-top:20px;
+
+display:flex;
+
+justify-content:center;
+
+gap:20px;
+
+flex-wrap:wrap;
+
+color:#6b7280;
+
+font-size:15px;
+
+}
+
 /* ================= PROGRESS ================= */
 
 #progress{
@@ -180,7 +224,65 @@ background:#2563eb;
 z-index:9999;
 
 }
+.article-header{
 
+background:#fff;
+
+padding:60px 0 35px;
+
+text-align:center;
+
+}
+
+.article-header h1{
+
+font-size:clamp(34px,5vw,54px);
+
+line-height:1.25;
+
+font-weight:800;
+
+max-width:900px;
+
+margin:20px auto;
+
+color:#1f2937;
+
+}
+
+.article-header .category{
+
+display:inline-block;
+
+background:#2563eb;
+
+color:#fff;
+
+padding:8px 22px;
+
+border-radius:50px;
+
+font-size:14px;
+
+}
+
+.article-header .meta{
+
+margin-top:20px;
+
+display:flex;
+
+justify-content:center;
+
+gap:20px;
+
+flex-wrap:wrap;
+
+color:#6b7280;
+
+font-size:15px;
+
+}
 article h2{
 
 font-size:32px;
@@ -258,14 +360,6 @@ article h2{
 font-size:26px;
 
 }
-
-article p{
-
-font-size:17px;
-
-}
-
-}
 </style>
 
 </head>
@@ -286,9 +380,9 @@ DatingBlog
 
 <div class="menu">
 
-<a href="../index.html">Beranda</a>
+<a href="../../index.html">Beranda</a>
 
-<a href="../categories/category.html">Kategori</a>
+<a href="../../categories/category.html">Kategori</a>
 
 </div>
 
@@ -300,7 +394,19 @@ DatingBlog
 
 <section class="hero">
 
-<div class="hero-content">
+<img src="../../images/relationship/article1-relationship.webp");
+
+</section>
+
+<section class="article-header">
+
+<div class="container">
+
+<span class="category">
+
+💕 Relationship
+
+</span>
 
 <h1>
 
