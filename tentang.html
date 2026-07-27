@@ -1,0 +1,1591 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Tentang DatingBlog | Mengenal DatingBlog Lebih Dekat</title>
+
+<meta name="description" content="Kenali DatingBlog lebih dekat. Temukan visi, misi, tujuan, dan komitmen kami dalam menghadirkan artikel berkualitas seputar hubungan, self improvement, dan kehidupan.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+
+font-family:'Poppins',sans-serif;
+background:#f5f7fb;
+color:#1f2937;
+line-height:1.8;
+
+}
+
+a{
+
+text-decoration:none;
+color:inherit;
+
+}
+
+img{
+
+display:block;
+max-width:100%;
+
+}
+
+.container{
+
+width:min(1180px,94%);
+margin:auto;
+
+}
+
+/*========================
+
+HEADER
+
+========================*/
+
+header{
+
+background:#fff;
+position:sticky;
+top:0;
+z-index:999;
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+
+}
+
+nav{
+
+height:75px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+}
+
+.logo{
+
+font-size:30px;
+font-weight:700;
+color:#2563eb;
+
+}
+
+.menu{
+
+display:flex;
+gap:30px;
+
+}
+
+.menu a{
+
+font-size:15px;
+font-weight:500;
+transition:.3s;
+
+}
+
+.menu a:hover{
+
+color:#2563eb;
+
+}
+
+.active{
+
+color:#2563eb;
+font-weight:700;
+
+}
+
+/*========================
+
+HERO
+
+========================*/
+
+.hero{
+
+margin:35px 0 60px;
+border-radius:28px;
+overflow:hidden;
+
+background:
+linear-gradient(135deg,#2563eb,#1d4ed8,#4f46e5);
+
+padding:80px 70px;
+
+color:#fff;
+
+position:relative;
+
+box-shadow:0 25px 60px rgba(37,99,235,.25);
+
+}
+
+.hero::before{
+
+content:"";
+
+position:absolute;
+
+width:420px;
+height:420px;
+
+background:rgba(255,255,255,.08);
+
+border-radius:50%;
+
+right:-120px;
+top:-120px;
+
+}
+
+.hero::after{
+
+content:"";
+
+position:absolute;
+
+width:250px;
+height:250px;
+
+background:rgba(255,255,255,.08);
+
+left:-80px;
+bottom:-80px;
+
+border-radius:50%;
+
+}
+
+.hero-content{
+
+position:relative;
+z-index:5;
+max-width:760px;
+
+}
+
+.hero span{
+
+display:inline-block;
+
+padding:8px 18px;
+
+background:rgba(255,255,255,.15);
+
+border-radius:50px;
+
+margin-bottom:20px;
+
+font-size:14px;
+
+backdrop-filter:blur(8px);
+
+}
+
+.hero h1{
+
+font-size:58px;
+line-height:1.2;
+margin-bottom:25px;
+
+}
+
+.hero p{
+
+font-size:19px;
+opacity:.95;
+margin-bottom:35px;
+
+}
+
+.hero-btn{
+
+display:inline-block;
+
+padding:16px 34px;
+
+background:#fff;
+
+color:#2563eb;
+
+font-weight:700;
+
+border-radius:60px;
+
+transition:.35s;
+
+}
+
+.hero-btn:hover{
+
+transform:translateY(-4px);
+
+box-shadow:0 15px 35px rgba(0,0,0,.2);
+
+}
+
+  /*========================
+SECTION
+========================*/
+
+.section{
+padding:20px 0 70px;
+}
+
+.section-title{
+font-size:38px;
+font-weight:700;
+text-align:center;
+margin-bottom:15px;
+color:#111827;
+}
+
+.section-desc{
+max-width:760px;
+margin:0 auto 55px;
+text-align:center;
+color:#6b7280;
+font-size:17px;
+line-height:1.8;
+}
+
+/*========================
+STATISTIC
+========================*/
+
+.stats{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:25px;
+margin-bottom:80px;
+}
+
+.stat-card{
+
+background:#fff;
+border-radius:22px;
+padding:35px;
+
+text-align:center;
+
+box-shadow:0 12px 30px rgba(0,0,0,.06);
+
+transition:.35s;
+
+}
+
+.stat-card:hover{
+
+transform:translateY(-10px);
+
+}
+
+.stat-icon{
+
+font-size:42px;
+margin-bottom:15px;
+
+}
+
+.stat-number{
+
+font-size:42px;
+font-weight:800;
+color:#2563eb;
+
+}
+
+.stat-title{
+
+margin-top:8px;
+font-size:16px;
+color:#6b7280;
+
+}
+
+/*========================
+ABOUT
+========================*/
+
+.about{
+
+display:grid;
+grid-template-columns:1.1fr .9fr;
+gap:60px;
+align-items:center;
+margin-bottom:90px;
+
+}
+
+.about h2{
+
+font-size:40px;
+margin-bottom:25px;
+
+}
+
+.about p{
+
+margin-bottom:18px;
+color:#4b5563;
+
+}
+
+.about-box{
+
+background:#fff;
+
+padding:45px;
+
+border-radius:28px;
+
+box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+}
+
+.about-list{
+
+display:flex;
+flex-direction:column;
+gap:20px;
+
+}
+
+.about-item{
+
+display:flex;
+gap:18px;
+align-items:flex-start;
+
+}
+
+.about-item i{
+
+width:58px;
+height:58px;
+
+border-radius:50%;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+font-style:normal;
+
+font-size:24px;
+
+background:#dbeafe;
+
+}
+
+/*========================
+VISION
+========================*/
+
+.vision-grid{
+
+display:grid;
+
+grid-template-columns:repeat(4,1fr);
+
+gap:25px;
+
+}
+
+.vision-card{
+
+background:#fff;
+
+padding:35px;
+
+border-radius:25px;
+
+box-shadow:0 12px 30px rgba(0,0,0,.06);
+
+transition:.35s;
+
+}
+
+.vision-card:hover{
+
+transform:translateY(-10px);
+
+}
+
+.vision-card h3{
+
+margin:18px 0 10px;
+
+font-size:22px;
+
+}
+
+.vision-card p{
+
+color:#6b7280;
+
+}
+
+.vision-icon{
+
+font-size:48px;
+
+}
+
+  /*========================
+TOPICS
+========================*/
+
+.topic-grid{
+
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:28px;
+margin-top:50px;
+margin-bottom:90px;
+
+}
+
+.topic-card{
+
+background:#fff;
+border-radius:26px;
+padding:38px;
+
+box-shadow:0 15px 35px rgba(0,0,0,.06);
+
+transition:.35s;
+
+position:relative;
+overflow:hidden;
+
+}
+
+.topic-card:hover{
+
+transform:translateY(-10px);
+
+}
+
+.topic-card::before{
+
+content:"";
+
+position:absolute;
+
+top:0;
+left:0;
+
+width:100%;
+height:6px;
+
+background:linear-gradient(90deg,#2563eb,#60a5fa);
+
+}
+
+.topic-icon{
+
+font-size:52px;
+
+margin-bottom:18px;
+
+}
+
+.topic-card h3{
+
+font-size:24px;
+margin-bottom:15px;
+
+}
+
+.topic-card p{
+
+color:#6b7280;
+
+margin-bottom:20px;
+
+}
+
+.topic-card ul{
+
+padding-left:20px;
+color:#4b5563;
+
+}
+
+.topic-card li{
+
+margin-bottom:10px;
+
+}
+
+/*========================
+FEATURES
+========================*/
+
+.feature-grid{
+
+display:grid;
+
+grid-template-columns:repeat(3,1fr);
+
+gap:25px;
+
+margin-top:45px;
+
+}
+
+.feature-card{
+
+background:#fff;
+
+padding:35px;
+
+border-radius:24px;
+
+text-align:center;
+
+box-shadow:0 15px 35px rgba(0,0,0,.06);
+
+transition:.35s;
+
+}
+
+.feature-card:hover{
+
+transform:translateY(-10px);
+
+}
+
+.feature-icon{
+
+width:80px;
+height:80px;
+
+margin:auto;
+
+border-radius:50%;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+font-size:36px;
+
+background:#dbeafe;
+
+margin-bottom:22px;
+
+}
+
+.feature-card h3{
+
+margin-bottom:12px;
+
+}
+
+.feature-card p{
+
+color:#6b7280;
+
+}
+  /*========================
+TIMELINE
+========================*/
+
+.timeline{
+
+max-width:900px;
+margin:60px auto 90px;
+
+position:relative;
+
+}
+
+.timeline::before{
+
+content:"";
+
+position:absolute;
+
+left:30px;
+top:0;
+bottom:0;
+
+width:4px;
+
+background:#2563eb;
+
+border-radius:20px;
+
+}
+
+.timeline-item{
+
+display:flex;
+gap:30px;
+margin-bottom:45px;
+
+position:relative;
+
+}
+
+.timeline-dot{
+
+width:64px;
+height:64px;
+
+border-radius:50%;
+
+background:#2563eb;
+
+color:#fff;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+font-size:28px;
+
+flex-shrink:0;
+
+z-index:2;
+
+box-shadow:0 8px 25px rgba(37,99,235,.35);
+
+}
+
+.timeline-content{
+
+background:#fff;
+
+padding:28px;
+
+border-radius:22px;
+
+box-shadow:0 12px 30px rgba(0,0,0,.06);
+
+flex:1;
+
+}
+
+.timeline-content h3{
+
+margin-bottom:12px;
+
+font-size:24px;
+
+}
+
+.timeline-content p{
+
+color:#6b7280;
+
+}
+
+/*========================
+QUOTE
+========================*/
+
+.quote{
+
+margin:90px 0;
+
+background:linear-gradient(135deg,#2563eb,#4f46e5);
+
+padding:70px;
+
+border-radius:30px;
+
+text-align:center;
+
+color:#fff;
+
+box-shadow:0 20px 45px rgba(37,99,235,.25);
+
+}
+
+.quote h2{
+
+font-size:42px;
+
+margin-bottom:25px;
+
+}
+
+.quote p{
+
+font-size:22px;
+
+line-height:1.8;
+
+max-width:850px;
+
+margin:auto;
+
+opacity:.96;
+
+}
+
+/*========================
+CTA
+========================*/
+
+.cta{
+
+background:#fff;
+
+padding:70px;
+
+border-radius:28px;
+
+text-align:center;
+
+box-shadow:0 15px 35px rgba(0,0,0,.06);
+
+margin-bottom:80px;
+
+}
+
+.cta h2{
+
+font-size:40px;
+
+margin-bottom:18px;
+
+}
+
+.cta p{
+
+max-width:720px;
+
+margin:0 auto 35px;
+
+color:#6b7280;
+
+}
+
+.cta a{
+
+display:inline-block;
+
+padding:17px 40px;
+
+background:#2563eb;
+
+color:#fff;
+
+font-weight:700;
+
+border-radius:60px;
+
+transition:.35s;
+
+}
+
+.cta a:hover{
+
+transform:translateY(-5px);
+
+box-shadow:0 15px 30px rgba(37,99,235,.35);
+
+}
+
+/*========================
+FOOTER
+========================*/
+
+footer{
+
+background:#111827;
+
+padding:50px 0;
+
+color:#d1d5db;
+
+text-align:center;
+
+}
+
+footer h3{
+
+color:#fff;
+
+font-size:28px;
+
+margin-bottom:15px;
+
+}
+
+footer p{
+
+max-width:700px;
+
+margin:auto;
+
+font-size:15px;
+
+line-height:1.8;
+
+}
+
+/*========================
+RESPONSIVE
+========================*/
+
+@media(max-width:992px){
+
+.hero{
+padding:60px 40px;
+}
+
+.hero h1{
+font-size:42px;
+}
+
+.stats,
+.vision-grid,
+.topic-grid,
+.feature-grid{
+
+grid-template-columns:1fr 1fr;
+
+}
+
+.about{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.menu{
+
+display:none;
+
+}
+
+.hero{
+
+padding:45px 30px;
+
+}
+
+.hero h1{
+
+font-size:34px;
+
+}
+
+.hero p{
+
+font-size:16px;
+
+}
+
+.stats,
+.topic-grid,
+.vision-grid,
+.feature-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.section-title{
+
+font-size:30px;
+
+}
+
+.quote{
+
+padding:45px 25px;
+
+}
+
+.quote h2{
+
+font-size:30px;
+
+}
+
+.quote p{
+
+font-size:18px;
+
+}
+
+.cta{
+
+padding:45px 25px;
+
+}
+
+.cta h2{
+
+font-size:30px;
+
+}
+
+.timeline::before{
+
+left:22px;
+
+}
+
+.timeline-dot{
+
+width:48px;
+height:48px;
+
+font-size:22px;
+
+}
+
+}
+  </style>
+</head>
+
+<body>
+
+<header>
+
+<div class="container">
+
+<nav>
+
+<div class="logo">
+DatingBlog
+</div>
+
+<div class="menu">
+
+<a href="index.html">Home</a>
+
+<a href="index.html">Artikel</a>
+
+<a href="categories/category.html">Kategori</a>
+
+<a href="tentang.html" class="active">Tentang</a>
+
+</div>
+
+</nav>
+
+</div>
+
+</header>
+
+<div class="container">
+
+<section class="hero">
+
+<div class="hero-content">
+
+<span>❤️ Tentang DatingBlog</span>
+
+<h1>
+Tempat Berbagi Inspirasi, Hubungan Sehat, dan Pengembangan Diri
+</h1>
+
+<p>
+
+DatingBlog hadir untuk membantu pembaca menemukan informasi yang akurat, mudah dipahami, dan bermanfaat mengenai hubungan, cinta, kehidupan, serta pengembangan diri. Kami percaya bahwa setiap perubahan besar selalu dimulai dari pengetahuan yang tepat dan tindakan kecil yang dilakukan secara konsisten.
+
+</p>
+
+<a href="index.html" class="hero-btn">
+
+📚 Jelajahi Artikel
+
+</a>
+
+</div>
+
+</section>
+
+  
+<section class="section">
+
+<div class="stats">
+
+<div class="stat-card">
+
+<div class="stat-icon">📚</div>
+
+<div class="stat-number">40+</div>
+
+<div class="stat-title">Artikel Berkualitas</div>
+
+</div>
+
+<div class="stat-card">
+
+<div class="stat-icon">❤️</div>
+
+<div class="stat-number">3</div>
+
+<div class="stat-title">Topik Utama</div>
+
+</div>
+
+<div class="stat-card">
+
+<div class="stat-icon">⭐</div>
+
+<div class="stat-number">100%</div>
+
+<div class="stat-title">Artikel Original</div>
+
+</div>
+
+<div class="stat-card">
+
+<div class="stat-icon">🚀</div>
+
+<div class="stat-number">Update</div>
+
+<div class="stat-title">Secara Berkala</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="about">
+
+<div>
+
+<h2>
+Mengenal DatingBlog Lebih Dekat
+</h2>
+
+<p>
+
+DatingBlog merupakan media informasi yang berfokus pada pembahasan mengenai hubungan, pengembangan diri, serta kehidupan sehari-hari. Kami hadir dengan tujuan membantu pembaca memperoleh informasi yang akurat, mudah dipahami, dan dapat diterapkan dalam kehidupan nyata.
+
+</p>
+
+<p>
+
+Kami percaya bahwa hubungan yang sehat tidak hanya dibangun melalui komunikasi yang baik, tetapi juga dimulai dari kemampuan seseorang mengenali dirinya sendiri. Oleh karena itu, selain membahas topik seputar cinta dan hubungan, DatingBlog juga menghadirkan berbagai artikel mengenai self improvement, produktivitas, kesehatan mental, motivasi, serta kebiasaan positif yang dapat membantu setiap pembaca menjadi pribadi yang lebih baik.
+
+</p>
+
+<p>
+
+Seluruh artikel disusun dengan bahasa yang ringan, mudah dipahami, dan berdasarkan referensi yang relevan agar dapat memberikan manfaat nyata bagi siapa pun yang membacanya. Kami berharap setiap artikel yang diterbitkan tidak hanya menambah wawasan, tetapi juga mampu memberikan inspirasi untuk mengambil langkah kecil menuju perubahan yang lebih baik.
+
+</p>
+
+</div>
+
+<div class="about-box">
+
+<div class="about-list">
+
+<div class="about-item">
+
+<i>🎯</i>
+
+<div>
+
+<h3>Tujuan Kami</h3>
+
+<p>
+Menyajikan informasi yang bermanfaat dan dapat diterapkan dalam kehidupan sehari-hari.
+</p>
+
+</div>
+
+</div>
+
+<div class="about-item">
+
+<i>📖</i>
+
+<div>
+
+<h3>Konten Berkualitas</h3>
+
+<p>
+Setiap artikel ditulis dengan bahasa yang mudah dipahami serta mengutamakan pengalaman membaca yang nyaman.
+</p>
+
+</div>
+
+</div>
+
+<div class="about-item">
+
+<i>💙</i>
+
+<div>
+
+<h3>Berorientasi pada Pembaca</h3>
+
+<p>
+Kami selalu berusaha menghadirkan artikel yang relevan dengan kebutuhan dan permasalahan yang sering dihadapi pembaca.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2 class="section-title">
+
+Visi & Misi DatingBlog
+
+</h2>
+
+<p class="section-desc">
+
+Menjadi media informasi terpercaya yang membantu masyarakat membangun hubungan yang lebih sehat, meningkatkan kualitas diri, dan menjalani kehidupan yang lebih bermakna.
+
+</p>
+
+<div class="vision-grid">
+
+<div class="vision-card">
+
+<div class="vision-icon">❤️</div>
+
+<h3>Hubungan Sehat</h3>
+
+<p>
+
+Memberikan wawasan mengenai komunikasi, cinta, hubungan, dan kehidupan sosial yang lebih baik.
+
+</p>
+
+</div>
+
+<div class="vision-card">
+
+<div class="vision-icon">🌱</div>
+
+<h3>Self Improvement</h3>
+
+<p>
+
+Mendorong setiap pembaca untuk terus berkembang melalui kebiasaan positif dan pola pikir yang sehat.
+
+</p>
+
+</div>
+
+<div class="vision-card">
+
+<div class="vision-icon">📚</div>
+
+<h3>Edukasi</h3>
+
+<p>
+
+Menyediakan artikel informatif yang mudah dipahami oleh semua kalangan pembaca.
+
+</p>
+
+</div>
+
+<div class="vision-card">
+
+<div class="vision-icon">⭐</div>
+
+<h3>Konsisten</h3>
+
+<p>
+
+Terus menghadirkan konten berkualitas secara berkala dengan pembahasan yang relevan dan bermanfaat.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+  
+<section class="section">
+
+<h2 class="section-title">
+
+Apa yang Akan Kamu Temukan di DatingBlog?
+
+</h2>
+
+<p class="section-desc">
+
+DatingBlog menghadirkan berbagai artikel yang dirancang untuk membantu pembaca memperoleh wawasan baru, meningkatkan kualitas diri, dan membangun hubungan yang lebih sehat dalam kehidupan sehari-hari.
+
+</p>
+
+<div class="topic-grid">
+
+<div class="topic-card">
+
+<div class="topic-icon">
+❤️
+</div>
+
+<h3>Hubungan & Percintaan</h3>
+
+<p>
+
+Pelajari berbagai pembahasan mengenai hubungan yang sehat, komunikasi, cinta, LDR, komitmen, hingga cara menghadapi berbagai dinamika dalam sebuah hubungan.
+
+</p>
+
+<ul>
+
+<li>Tips hubungan sehat</li>
+
+<li>Komunikasi pasangan</li>
+
+<li>Mengatasi konflik</li>
+
+<li>Menjalin hubungan harmonis</li>
+
+</ul>
+
+</div>
+
+<div class="topic-card">
+
+<div class="topic-icon">
+🧠
+</div>
+
+<h3>Self Improvement</h3>
+
+<p>
+
+Kembangkan potensi diri melalui artikel mengenai produktivitas, kebiasaan positif, motivasi, rasa percaya diri, hingga pengembangan pola pikir.
+
+</p>
+
+<ul>
+
+<li>Produktivitas</li>
+
+<li>Mindset positif</li>
+
+<li>Percaya diri</li>
+
+<li>Kebiasaan baik</li>
+
+</ul>
+
+</div>
+
+<div class="topic-card">
+
+<div class="topic-icon">
+🌿
+</div>
+
+<h3>Kehidupan Sehari-hari</h3>
+
+<p>
+
+Temukan berbagai inspirasi untuk menjalani kehidupan yang lebih tenang, bahagia, dan bermakna melalui kebiasaan sederhana yang dapat diterapkan setiap hari.
+
+</p>
+
+<ul>
+
+<li>Motivasi hidup</li>
+
+<li>Kesehatan mental</li>
+
+<li>Gaya hidup</li>
+
+<li>Pengembangan diri</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2 class="section-title">
+
+Mengapa Memilih DatingBlog?
+
+</h2>
+
+<p class="section-desc">
+
+Kami berkomitmen menghadirkan artikel yang tidak hanya menarik untuk dibaca, tetapi juga memberikan manfaat nyata bagi setiap pembaca.
+
+</p>
+
+<div class="feature-grid">
+
+<div class="feature-card">
+
+<div class="feature-icon">
+📚
+</div>
+
+<h3>Artikel Original</h3>
+
+<p>
+
+Setiap artikel ditulis secara orisinal dengan penyampaian yang mudah dipahami.
+
+</p>
+
+</div>
+
+<div class="feature-card">
+
+<div class="feature-icon">
+⭐
+</div>
+
+<h3>Informasi Berkualitas</h3>
+
+<p>
+
+Konten disusun secara sistematis agar mudah dipelajari oleh semua kalangan pembaca.
+
+</p>
+
+</div>
+
+<div class="feature-card">
+
+<div class="feature-icon">
+💙
+</div>
+
+<h3>Bahasa Ringan</h3>
+
+<p>
+
+Menggunakan bahasa yang sederhana sehingga nyaman dibaca kapan saja.
+
+</p>
+
+</div>
+
+<div class="feature-card">
+
+<div class="feature-icon">
+🚀
+</div>
+
+<h3>Selalu Update</h3>
+
+<p>
+
+Kami terus menambahkan artikel baru agar informasi yang tersedia semakin lengkap.
+
+</p>
+
+</div>
+
+<div class="feature-card">
+
+<div class="feature-icon">
+📱
+</div>
+
+<h3>Responsif</h3>
+
+<p>
+
+Website dirancang agar nyaman diakses melalui komputer, tablet, maupun smartphone.
+
+</p>
+
+</div>
+
+<div class="feature-card">
+
+<div class="feature-icon">
+🌍
+</div>
+
+<h3>Gratis Dibaca</h3>
+
+<p>
+
+Semua artikel dapat diakses kapan saja tanpa biaya sehingga manfaatnya bisa dinikmati oleh siapa pun.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+  
+<section class="section">
+
+<h2 class="section-title">
+Perjalanan DatingBlog
+</h2>
+
+<p class="section-desc">
+
+Kami percaya bahwa setiap artikel yang dipublikasikan merupakan langkah kecil untuk membantu pembaca memperoleh wawasan baru dan menjalani kehidupan yang lebih baik.
+
+</p>
+
+<div class="timeline">
+
+<div class="timeline-item">
+
+<div class="timeline-dot">💡</div>
+
+<div class="timeline-content">
+
+<h3>Berawal dari Sebuah Ide</h3>
+
+<p>
+DatingBlog lahir dari keinginan untuk menghadirkan media informasi yang membahas hubungan, kehidupan, dan pengembangan diri dengan bahasa yang mudah dipahami.
+</p>
+
+</div>
+
+</div>
+
+<div class="timeline-item">
+
+<div class="timeline-dot">✍️</div>
+
+<div class="timeline-content">
+
+<h3>Menulis Artikel Berkualitas</h3>
+
+<p>
+Setiap artikel disusun secara sistematis agar memberikan manfaat nyata serta pengalaman membaca yang nyaman bagi setiap pengunjung.
+</p>
+
+</div>
+
+</div>
+
+<div class="timeline-item">
+
+<div class="timeline-dot">🚀</div>
+
+<div class="timeline-content">
+
+<h3>Terus Berkembang</h3>
+
+<p>
+Kami akan terus menghadirkan artikel baru dengan topik yang relevan sehingga DatingBlog dapat menjadi sumber referensi yang bermanfaat dalam jangka panjang.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="quote">
+
+<h2>
+Satu Artikel Bisa Membawa Perubahan
+</h2>
+
+<p>
+
+"Kami percaya bahwa setiap informasi yang tepat dapat menjadi awal dari perubahan besar. Melalui DatingBlog, kami ingin menemani setiap pembaca dalam memahami hubungan yang lebih sehat, mengembangkan potensi diri, dan menjalani kehidupan yang lebih bermakna."
+
+</p>
+
+</section>
+
+<section class="cta">
+
+<h2>
+Siap Menjelajahi Artikel Kami?
+</h2>
+
+<p>
+
+Temukan berbagai artikel pilihan mengenai hubungan, self improvement, dan kehidupan yang ditulis dengan bahasa yang ringan, informatif, serta mudah dipahami.
+
+</p>
+
+<a href="../categories/category.html">
+
+📚 Jelajahi Artikel
+
+</a>
+
+</section>
+
+</div>
+
+<footer>
+
+<div class="container">
+
+<h3>DatingBlog</h3>
+
+<p>
+
+DatingBlog adalah media informasi yang membahas hubungan, cinta, pengembangan diri, dan kehidupan sehari-hari. Kami berkomitmen menghadirkan artikel berkualitas yang bermanfaat bagi setiap pembaca.
+
+</p>
+
+<p style="margin-top:25px;opacity:.7;">
+
+© 2026 DatingBlog. All Rights Reserved.
+
+</p>
+
+</div>
+
+</footer>
+
+</body>
+</html>
