@@ -75,8 +75,8 @@ color:#2563eb;
 
 .menu {
     position:fixed;
-    top:20px;
-    right:-300px;
+    top:70px;
+    right:20px;
     width:260px;
     height:auto;
     max-height:80vh;
@@ -92,15 +92,17 @@ color:#2563eb;
     border-radius:20px;
 }
 
-.menu.active {
-    right:20px;
-}
-
 .menu a{
     padding:15px 25px;
     color:#333;
     font-weight:500;
     transition:.3s;
+}
+
+.menu.active {
+    transform:translateY(0);
+    opacity:1;
+    visibility:visible;
 }
 
 .hamburger{
