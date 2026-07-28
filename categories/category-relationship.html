@@ -86,33 +86,52 @@ color:#2563eb;
 
 }
 
-.menu{
+.menu {
+    position:fixed;
+    top:20px;
+    right:-300px;
+    width:260px;
+    height:auto;
+    max-height:80vh;
+    background:#fff;
+    border:1px solid rgba(0,0,0,0.08);
+    backdrop-filter:blur(10px);
+    box-shadow:0 8px 30px rgba(0,0,0,0.15);
+    display:flex;
+    flex-direction:column;
+    padding:70px 0 20px;
+    transition:0.3s ease;
+    z-index:9999;
+    border-radius:20px;
+}
 
-display:flex;
-
-gap:28px;
-
+.menu.active {
+    right:20px;
 }
 
 .menu a{
-
-font-weight:500;
-
-transition:.3s;
-
+    padding:15px 25px;
+    color:#333;
+    font-weight:500;
+    transition:.3s;
 }
 
-.menu a:hover{
-
-color:#2563eb;
-
+.hamburger{
+    display:block;
+    position:relative;
+    z-index:10000;
+    cursor:pointer;
+    font-size:30px;
 }
-    
-.active{
+/* khusus HP dan tablet */
+@media(max-width:768px){
 
-color:#2563eb;
-font-weight:700;
-
+    nav {
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        padding:15px;
+    }
 }
 .featured{
     margin:25px 0 40px;
@@ -259,19 +278,29 @@ padding:35px;
 <nav>
 
 <div class="logo">
-    
-    DatingBlog
-    
+Relationship
 </div>
     
-<div class="menu">
-
+<div class="hamburger" onclick="toggleMenu()">
+    <span id="icon">☰</span>
+</div>
+  
+<div class="menu" id="menu">
+  
 <a href="../index.html">Home</a>
 
 <a href="../categories/category.html">Kategori</a>
+  
+<a href="../tentang.html">Tentang</a>
     
-<a href="../categories/category-relationship.html" class="active">Relationship</a>
+<a href="../contact.html">Contact</a>
+
+<a href="../disclaimer.html">Disclaimer</a>
     
+<a href="../privacy-policy.html">Privacy Policy</a>
+    
+<a href="#">Dll.</a>
+
 </div>
 
 </nav>
@@ -550,7 +579,23 @@ Apakah hubunganmu sudah siap ke jenjang yang lebih serius? Kenali 10 tanda hubun
 <p>© 2026 DatingBlog. All Rights Reserved.</p>
 
 </footer>
+    
+<script>
+function toggleMenu(){
 
+    document.getElementById("menu").classList.toggle("active");
+
+    let icon = document.getElementById("icon");
+
+    if(icon.innerHTML === "☰"){
+        icon.innerHTML = "✕";
+    }else{
+        icon.innerHTML = "☰";
+    }
+
+}
+</script>
+    
 </body>
 
 </html>
