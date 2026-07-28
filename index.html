@@ -107,47 +107,47 @@ font-weight:700;
 /* tampilan HP dan tablet */
 @media(max-width:768px){
 
-@media(max-width:768px){
-
     nav {
         display:flex;
         justify-content:space-between;
         align-items:center;
         padding:15px;
+        position:relative;
+        z-index:1000;
     }
 
 
-    .hamburger {
-        display:block;
-        font-size:30px;
-        cursor:pointer;
+    .hamburger{
+    position:relative;
+    z-index:10000;
+    cursor:pointer;
     }
 
 
     .menu {
         position:fixed;
-        top:-100%;
-        left:0;
-        width:100%;
-        height:auto;
-        background:#fff;
+        top:0;
+        right:-300px;
+        width:260px;
+        height:100vh;
+        background:rgba(20,20,20,0.95);
+        backdrop-filter:blur(10px);
         display:flex;
         flex-direction:column;
-        padding:80px 0 20px;
-        transition:0.5s cubic-bezier(.68,-0.55,.27,1.55);
-        z-index:999;
-        box-shadow:0 10px 25px rgba(0,0,0,0.15);
+        padding-top:80px;
+        transition:0.3s ease;
+        z-index:9999;
     }
 
 
     .menu a {
         padding:15px 25px;
-        text-align:center;
+        color:#fff;
     }
 
 
     .menu.active {
-        top:0;
+        right:0;
     }
 
 }
@@ -373,9 +373,9 @@ aside{
 
 <a href="categories/category.html">Kategori</a>
 
+<a href="index.html">Artikel</a>
+
 <a href="tentang.html">Tentang</a>
-    
-<a href="about.html">About</a>
     
 <a href="contact.html">Contact</a>
 
@@ -613,7 +613,17 @@ Temukan berbagai artikel seputar hubungan, dating, komunikasi, dan tips membangu
     
 <script>
 function toggleMenu(){
+
     document.getElementById("menu").classList.toggle("active");
+
+    let icon = document.getElementById("icon");
+
+    if(icon.innerHTML === "☰"){
+        icon.innerHTML = "✕";
+    }else{
+        icon.innerHTML = "☰";
+    }
+
 }
 </script>
 </body>
