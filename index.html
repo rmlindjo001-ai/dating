@@ -97,12 +97,12 @@ color:#2563eb;
 font-weight:700;
 
 }
-.hamburger {
-    display: none;
+.hamburger{
     position:relative;
-    font-size: 30px;
-    cursor: pointer;
+    z-index:10000;
+    cursor:pointer;
 }
+
 
 /* khusus HP dan tablet */
 @media(max-width:768px){
@@ -115,11 +115,10 @@ font-weight:700;
     }
 
 
-.hamburger{
-    position:relative;
-    z-index:10000;
-    cursor:pointer;
-}
+    .hamburger {
+        display:block;
+        font-size:30px;
+    }
 
 
 .menu {
