@@ -97,12 +97,11 @@ color:#2563eb;
 font-weight:700;
 
 }
-.hamburger{
-    position:relative;
-    z-index:10000;
-    cursor:pointer;
+.hamburger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
 }
-
 
 /* khusus HP dan tablet */
 @media(max-width:768px){
@@ -146,7 +145,8 @@ font-weight:700;
     padding:15px 25px;
    color:#333;
     }
-
+   
+}
 /* ===========================
    HERO
 =========================== */
@@ -618,7 +618,7 @@ function toggleMenu(){
     let icon = document.getElementById("icon");
 
     if(icon.innerHTML === "☰"){
-        icon.innerHTML = "☰";
+        icon.innerHTML = "✕";
     }else{
         icon.innerHTML = "☰";
     }
