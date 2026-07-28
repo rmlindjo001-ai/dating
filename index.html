@@ -99,6 +99,7 @@ font-weight:700;
 }
 .hamburger {
     display: none;
+    position:relative;
     font-size: 30px;
     cursor: pointer;
 }
@@ -114,10 +115,11 @@ font-weight:700;
     }
 
 
-    .hamburger {
-        display:block;
-        font-size:30px;
-    }
+.hamburger{
+    position:relative;
+    z-index:10000;
+    cursor:pointer;
+}
 
 
 .menu {
