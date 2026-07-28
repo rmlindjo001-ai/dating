@@ -97,14 +97,14 @@ color:#2563eb;
 font-weight:700;
 
 }
-.hamburger {
-    display: none;
-    font-size: 30px;
-    cursor: pointer;
+.hamburger{
+    position:relative;
+    z-index:10000;
+    cursor:pointer;
 }
 
 
-/* tampilan HP dan tablet */
+/* khusus HP dan tablet */
 @media(max-width:768px){
 
     nav {
@@ -112,15 +112,12 @@ font-weight:700;
         justify-content:space-between;
         align-items:center;
         padding:15px;
-        position:relative;
-        z-index:1000;
     }
 
 
-    .hamburger{
-    position:relative;
-    z-index:10000;
-    cursor:pointer;
+    .hamburger {
+        display:block;
+        font-size:30px;
     }
 
 
@@ -139,18 +136,17 @@ font-weight:700;
         z-index:9999;
     }
 
-
-    .menu a {
-        padding:15px 25px;
-        color:#fff;
-    }
-
-
     .menu.active {
         right:0;
     }
 
 }
+
+    .menu a {
+    padding:15px 25px;
+    color:#fff;
+    }
+
 /* ===========================
    HERO
 =========================== */
