@@ -612,19 +612,27 @@ Temukan berbagai artikel seputar hubungan, dating, komunikasi, dan tips membangu
 </footer>
     
 <script>
-function toggleMenu(){
+const menu = document.getElementById("menu");
+const icon = document.getElementById("icon");
+const hamburger = document.querySelector(".hamburger");
 
-    document.getElementById("menu").classList.toggle("active");
+function toggleMenu() {
+    menu.classList.toggle("active");
 
-    let icon = document.getElementById("icon");
-
-    if(icon.innerHTML === "☰"){
+    if (menu.classList.contains("active")) {
         icon.innerHTML = "✕";
-    }else{
+    } else {
         icon.innerHTML = "☰";
     }
-
 }
+
+// Tutup menu jika klik di luar menu
+document.addEventListener("click", function(e) {
+    if (!menu.contains(e.target) && !hamburger.contains(e.target)) {
+        menu.classList.remove("active");
+        icon.innerHTML = "☰";
+    }
+});
 </script>
 </body>
 
