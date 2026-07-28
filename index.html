@@ -121,24 +121,25 @@ font-weight:700;
     }
 
 
-    .menu {
-        position:fixed;
-        top:0;
-        right:-300px;
-        width:260px;
-        height:100vh;
-        background:rgba(255,255,255,0.75);
-        backdrop-filter:blur(10px);
-        box-shadow:0 8px 30px rgba(0,0,0,0.15);
-        display:flex;
-        flex-direction:column;
-        padding-top:80px;
-        transition:0.3s ease;
-        z-index:9999;
-    }
-
+.menu {
+    position:fixed;
+    top:20px;
+    right:-300px;
+    width:260px;
+    height:auto;
+    max-height:80vh;
+    background:rgba(255,255,255,0.45);
+    backdrop-filter:blur(10px);
+    box-shadow:0 8px 30px rgba(0,0,0,0.15);
+    display:flex;
+    flex-direction:column;
+    padding:70px 0 20px;
+    transition:0.3s ease;
+    z-index:9999;
+    border-radius:20px;
+}
     .menu.active {
-        right:0;
+        right:20px;
     }
 
     .menu a {
@@ -373,10 +374,13 @@ aside{
 <a href="tentang.html">Tentang</a>
     
 <a href="contact.html">Contact</a>
-    
-<a href="privacy-policy.html">Privacy Policy</a>
 
 <a href="disclaimer.html">Disclaimer</a>
+    
+<a href="privacy-policy.html">Privacy Policy</a>
+    
+<a href="#">Dll.</a>
+
     
 </div>
 
