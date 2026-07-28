@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://love.vcus.my.id/sitemap.xml
+Sitemap: https://datingblog.my.id/sitemap.xml
