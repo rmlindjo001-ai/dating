@@ -88,8 +88,8 @@ color:#2563eb;
 
 .menu {
     position:fixed;
-    top:20px;
-    right:-300px;
+    top:70px;
+    right:20px;
     width:260px;
     height:auto;
     max-height:80vh;
@@ -100,13 +100,13 @@ color:#2563eb;
     display:flex;
     flex-direction:column;
     padding:70px 0 20px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-15px);
+    pointer-events: none;
     transition:0.3s ease;
     z-index:9999;
     border-radius:20px;
-}
-
-.menu.active {
-    right:20px;
 }
 
 .menu a{
@@ -114,6 +114,13 @@ color:#2563eb;
     color:#333;
     font-weight:500;
     transition:.3s;
+}
+
+.menu.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    pointer-events: auto;
 }
 
 .hamburger{
@@ -132,7 +139,7 @@ color:#2563eb;
         align-items:center;
         padding:15px;
     }
-} 
+}
 .featured{
     margin:25px 0 40px;
 }
